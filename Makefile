@@ -17,6 +17,10 @@ Makefile: ;              # skip prerequisite discovery
 # Run make help by default
 .DEFAULT_GOAL = help
 
+.PHONY: env
+env:
+	cp .env.example .env
+
 .PHONY: build
 build:
 	docker build \

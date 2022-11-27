@@ -8,25 +8,31 @@
 git clone git@github.com:NatalyaSamara/landings-test.git
 ```
 
-2. Install composer packages:
+2. Create .env file:
+
+```
+make env
+```
+
+3. Install composer packages:
 
 ```
 make composer
 ```
 
-3. Build application image:
+4. Build application image:
 
 ```bash
 make build
 ```
 
-4. Start application:
+5. Start application:
 
 ```bash
 make up
 ```
 
-5. Migrate && Seed:
+6. Migrate && Seed:
 
 ```bash
 make migrate
