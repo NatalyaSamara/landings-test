@@ -41,9 +41,8 @@ make migrate
 Congratulations, now it is ready to use!
 
 ### Usage
-```
+
 App: [http://localhost:80](http://localhost:80)
-```
 
 ## Uninstall
 
