@@ -5,7 +5,7 @@
 1. Clone repository:
 
 ```bash
-git clone 
+git clone git@github.com:NatalyaSamara/landings-test.git
 ```
 
 2. Install composer packages:
