@@ -24,7 +24,7 @@
 <body class="antialiased">
 <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-        <h1>Thanks for download!</h1>
+        <h1>Your form has been downloaded!</h1>
         <a href="{{ route('home') }}" class="underline text-gray-900 dark:text-white">go home</a>
     </div>
 </div>
