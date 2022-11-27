@@ -40,6 +40,11 @@ make migrate
 
 Congratulations, now it is ready to use!
 
+###Usage
+```
+http://localhost:80
+```
+
 ## Uninstall
 
 ```bash
