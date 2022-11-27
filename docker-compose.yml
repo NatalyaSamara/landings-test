@@ -7,7 +7,7 @@ services:
             dockerfile: docker/dockerfiles/nginx.dockerfile
         container_name: nginx
         ports:
-            - "8080:80"
+            - "80:80"
         volumes:
             - .:/var/www/html
         depends_on:
@@ -46,6 +46,18 @@ services:
         networks:
             - laravel
 
+    npm:
+        image: node:14
+        working_dir: /var/www/html
+        container_name: npm
+        entrypoint: [ "npm" ]
+        volumes:
+            - .:/var/www/html
+        ports:
+            - "5173:5173"
+        networks:
+            - laravel
+d
 networks:
     laravel:
 

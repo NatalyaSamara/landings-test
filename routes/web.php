@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', \App\Http\Controllers\HomePageController::class)
+    ->name('home');
+Route::get('/type-one/{slug}', \App\Http\Controllers\LandingOneTypeController::class)
+    ->name('landing1');
+Route::get('/type-two/{slug}', \App\Http\Controllers\LandingTwoTypeController::class)
+    ->name('landing2');
+Route::get('/type-three/{slug}', \App\Http\Controllers\LandingThreeTypeController::class)
+    ->name('landing3');
+Route::middleware(['auth'])->get('/landings/{id}/download', \App\Http\Controllers\DownloadController::class)
+    ->name('download');
+
+require __DIR__.'/auth.php';
+
